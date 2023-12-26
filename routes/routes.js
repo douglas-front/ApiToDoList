@@ -1,11 +1,12 @@
 const express = require("express")
 
 const router = express.Router()
+const exercicesControll = require("../controllers/controller")
 
 console.log("rotas deu ceerto")
 
-router.post("/at")
-router.get("/")
+router.post("/post", exercicesControll.create)
+router.get("/", exercicesControll.findAll)
 router.delete("/:id")
 
 module.exports = router

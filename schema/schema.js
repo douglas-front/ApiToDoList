@@ -7,4 +7,4 @@ const AtSchema = new schema({
   description: {type: String, required: true}
 })
 
-module.exports = mongoose.model("At", AtSchema)
+module.exports = mongoose.model("Exercices", AtSchema)
