@@ -7,6 +7,6 @@ console.log("rotas deu ceerto")
 
 router.post("/post", exercicesControll.create)
 router.get("/", exercicesControll.findAll)
-router.delete("/:id")
+router.delete("/:id", exercicesControll.delete)
 
 module.exports = router
